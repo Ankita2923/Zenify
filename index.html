@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zenify</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    
+    <style>
+      /* Add space between the links */
+      nav {
+        margin-bottom: 70px;
+      }
+      .navbar-nav .nav-item {
+        margin-right: 50px; /* Adjust the margin as needed */
+      }
+
+      /* Add a hover effect on the links */
+      .navbar-nav .nav-item .nav-link:hover {
+        background-color: #fbf3f3;
+        color: #d28383; /* Specify your desired hover color */
+        transition: color 0.3s; /* Smooth transition effect */
+        border-radius: 4px;
+      }
+
+      .nav-item .btn {
+        background-color: #fbf3f3;
+        color: #d28383;
+      }
+      .nav-item .btn:hover {
+        background-color: #fbf3f3;
+        color: #392D2D; /* Specify your desired hover color */
+        border: 1px solid #392D2D;
+        transition: color 0.3s; /* Smooth transition effect */
+      }
+
+    /* Custom styles for the buttons */
+    .custom-btn {
+      border-radius: 10px;
+      font-weight: 600;
+      padding: 16px 32px;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+  </style>
+  </head>
+  <body style="overflow-x: hidden;">
+    <!---------------------------Navbar-------------------------------------------->
+    <nav class="navbar navbar-expand-lg custom-bg fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0 m-0 col-2" href="index.html">
+          <img
+            src="./Zenify/Zenify-logo.gif"
+            class="rounded-circle m-0 brandlogo"
+            alt="brandlogo"
+          />
+        </a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end me-2"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item text-end">
+              <a class="custom-font1 nav-link" href="#scrollspyaboutus">About Us</a>
+            </li>
+            <li class="nav-item text-end">
+              <a class="custom-font1 nav-link" href="resource.html"
+                >Serenity Soundscapes</a
+              >
+            </li>
+            <li class="nav-item text-end">
+              <a class="custom-font1 nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item text-end">
+              <a
+                class="btn ml-2 border-2 custom-bg2 custom-font2" style="box-shadow: none;"
+                href="SignUp.html"
+              >
+                Join Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--------------------------------Caraousal starts-------------------------------------->
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide p-6" style="top:110px">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="./Zenify/mighty1.png"
+            class="d-block mw-100 mx-auto"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="./Zenify/mighty2.png"
+            class="d-block mw-100 mx-auto"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./Zenify/mighty3.png"
+            class="d-block mw-100 mx-auto"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!---------------------------------------carousel ends---------------------------------->
+
+
+
+    <!-- buttons start here -->
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5" style="margin-top: 170px;">
+      <a href="SignUp.html" type="button" class="get-started-btn btn btn-lg px-4 me-sm-3">Get Started</a>
+      <a href="Login.html" type="button" class="btn btn-lg px-4 existing-account-btn">I already have an account</a>
+    </div>
+    <!-- buttons end here -->
+    
+    <!-------------------------------Emoji Container------------------------------------------>
+    <div class="container mt-5">
+      <h1 style="color:#685151;" #392D2D;>How I'm Feeling Today</h1>
+    
+      <div class="emoji-card" style="width: 80%">
+        <a href="excited.html" id="excited" class="btn emoji-button btn-primary-hover" target="_blank">
+          <span class="emoji">&#x1F604;</span>
+        </a>
+        <a href="happy.html" id="happy" class="btn emoji-button btn-secondary-hover" target="_blank">
+          <span class="emoji">&#x1F60A;</span>
+        </a>
+        <a href="neutral.html" id="neutral" class="btn emoji-button btn-warning-hover" target="_blank">
+          <span class="emoji">&#x1F610;</span>
+        </a>
+        <a href="angry.html" id="angry" class="btn emoji-button btn-danger-hover" target="_blank">
+          <span class="emoji">&#x1F620;</span>
+        </a>
+        <a href="sad.html" id="sad" class="btn emoji-button btn-primary-hover" target="_blank">
+          <span class="emoji"> &#x1F61F;</span>
+        </a>
+        <a href="depressed.html" id="depressed" class="btn emoji-button btn-secondary-hover" target="_blank">
+          <span class="emoji">&#x1F622;</span>
+        </a>
+      </div>
+    </div>
+    <!-------------------------------Emoji Container------------------------------------------>
+    <!-- ------------------Cards---------------->
+    <div class="container label-heading" >
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="col-12 display-6 custom-font2 " style="color:#d28383cc;">
+            Zenify connects you to mental health support
+          </h1>
+        </br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mh-25">
+          <div class="card" style="background-color: #eaf9fb; color: #000">
+            <div class="card-body text-center pb-0">
+              <h5 class="card-title">
+                <a
+                  class="text-center custom-font2"
+                  href="#"
+                  style="text-decoration: none"
+                  >Try Our Online Quiz</a
+                >
+              </h5>
+              <p class="text-center" style="color: #685151;">
+                Take a look at the services that are right for you.
+              </p>
+              <img
+                src="./Zenify/placeholderimg1.png"
+                class="img-fluid card-img-top cardimg"
+                alt="Card Image 1"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="background-color: #fff7e6; color: #000">
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center">
+                <a
+                  class="text-center custom-font2"
+                  href="#"
+                  style="text-decoration: none"
+                  >Call 1800 595 212</a
+                >
+              </h5>
+              <p class="text-center" style="color: #685151;">
+                Make a free call for mental health advice and guidance.
+              </p>
+              <img
+                src="./Zenify/placeholderimg2.png"
+                class="img-fluid card-img-top cardimg"
+                alt="Card Image 2"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="background-color: #efeafb; color: #000">
+            <div class="card-body pb-0">
+              <h5 class="card-title text-center">
+                <a
+                  class="text-center custom-font2"
+                  href="#"
+                  style="text-decoration: none"
+                  >Visit in Person</a
+                ><i class="fas fa-arrow-alt-circle-up-right" style="color:#d28383;"></i>
+              </h5>
+              <p class="text-center" style="color: #685151;">
+                A safe and welcoming space for information and support.
+              </p>
+              <img
+                src="./Zenify/placeholderimg3.png"
+                class="img-fluid card-img-top cardimg"
+                alt="Card Image 3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about us  start here -->
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-r4zC4/XFkSyOVpaw0jg3GPFXaU5B5exo/8+5Bf5f5B5f5B5f5B5f5B5f5B5f5B5f5B5"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+    />
+<br>
+<br>
+    <h1 style="text-align: center; margin-top: 1 rem; color: #685151;" id="scrollspyaboutus">About Us</h1>
+    <div class="container py-3" style="box-shadow: 0px 8px 6px -6px lightgrey" id="team">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="text-black p-3" >
+            <!-- Add your text content here -->
+            <ul
+              style="list-style: none; font-size: 0.9rem; padding-left: 0.1rem ; color: #685151;"
+            >
+              <li style="padding-bottom: 1.8rem">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  width="16"
+                  height="16"
+                >
+                  >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+                Zenify is your go-to destination for mental wellness, providing
+                a safe and supportive space.
+              </li>
+
+              <li style="padding-bottom: 1.8rem">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  width="16"
+                  height="16"
+                >
+                  >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+                We make journaling accessible and enjoyable, offering
+                user-friendly tools and prompts.
+              </li>
+              <li style="padding-bottom: 1.8rem">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  width="16"
+                  height="16"
+                >
+                  >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+                Zenify is a platform for personal growth and self-discovery,
+                empowering your inner world
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  width="16"
+                  height="16"
+                >
+                  >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+                Join a thriving community of like-minded individuals who are on
+                same journey as you.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="img-div text-center">
+            <img
+              src="./Zenify/yoga.png"
+              alt="Image"
+              class="img-fluid"
+              style="max-width: 100%; margin-top: 1.2rem"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12" >
+          <h1 class="text-center mb-4" style="color:#d28383cc;">Our Team</h1>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow">
+            <img
+              src="./Zenify/ankita.png"
+              alt="Jane"
+              class="card-img-top rounded-circle mx-auto d-block mt-3"
+              style="width: 150px; height: 150px"
+            />
+            <div class="card-body text-center" style="color: #685151;">
+              <h4 class="card-title">Ankita Yadav</h4>
+              <p class="card-text">Head - Analytics</p>
+              <p class="card-text">
+                <i>"If there is no struggle, there is no progress."</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow">
+            <img
+              src="./Zenify/latika.png"
+              alt="Mike"
+              class="card-img-top rounded-circle mx-auto d-block mt-3"
+              style="width: 150px; height: 150px"
+            />
+            <div class="card-body text-center" style="color: #685151;">
+              <h4 class="card-title">Latika Singh</h4>
+              <p class="card-text">Editorial Director</p>
+              <p class="card-text">
+                <i>"You should only look back to see how far you have come."</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow">
+            <img
+              src="./Zenify/mahima.png"
+              alt="John"
+              class="card-img-top rounded-circle mx-auto d-block mt-3"
+              style="width: 150px; height: 150px"
+            />
+            <div class="card-body text-center" style="color: #685151;">
+              <h4 class="card-title">Mahima Pawar</h4>
+              <p class="card-text">Counsellor</p>
+              <p class="card-text">
+                <i
+                  >"I want everybody to have courage to face their feelings."</i
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add a new team member here -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card shadow">
+            <img
+              src="./Zenify/esha.png"
+              alt="New Team Member"
+              class="card-img-top rounded-circle mx-auto d-block mt-3"
+              style="width: 150px; height: 150px"
+            />
+            <div class="card-body text-center" style="color: #685151;">
+              <h4 class="card-title">Esha Yadav</h4>
+              <p class="card-text">Medical Practitioner</p>
+              <p class="card-text">
+                <i
+                  >"While you embark on this trip, we are here to hold your
+                  hand"</i
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------------------------about us end here ------------------------>
+    <!--------------------------------------- Accordian------------------------------------------->
+    <div class="accordian-thumbnail mb-0" >
+      <div class="row">
+          <!-- Accordion -->
+          <div class="col-md-6 mx-auto my-2 justify-content-center align-items-center p-0">
+              <div class="accordion shadow" id="accordionExample">
+                  <!-- Accordion items go here -->
+                  <div class="accordion col-m-3 ml-2 mx-auto my-2" id="accordionExample">
+                      <!-- ... (Your accordion items) ... -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button
+                            class="accordion-button collapsed text-light custom-bg3"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            What is Zenify?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseOne"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p style="color: #685151">
+                              Zenify is an online platform dedicated to helping you track your
+                              mental health and enhance your well-being through journaling and
+                              self-reflection tools.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button
+                            class="accordion-button collapsed text-light"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="true"
+                            aria-controls="collapseTwo"
+                          >
+                            How can journaling on Zenify benefit my mental health?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTwo"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p style="color: #685151">
+                              Journaling on Zenify provides a structured way to express your
+                              thoughts and feelings, leading to improved self-awareness,
+                              emotional regulation, and overall mental well-being.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button
+                            class="accordion-button collapsed text-light"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                            aria-expanded="true"
+                            aria-controls="collapseThree"
+                          >
+                            Is my journaling data on Zenify private and secure?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseThree"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p style="color: #685151">
+                              Yes, we take your privacy and data security seriously. Your
+                              journal entries are kept confidential, and we employ robust
+                              encryption and industry-standard security practices to protect
+                              your information.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button
+                            class="accordion-button collapsed text-light"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour"
+                            aria-expanded="true"
+                            aria-controls="collapseFour"
+                          >
+                            Does Zenify provide resources specific to mental health issues
+                            (e.g., anxiety, depression)?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseFour"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingFour"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p style="color: #685151">
+                              Absolutely. Zenify offers a wealth of articles, exercises, and
+                              resources tailored to various mental health challenges. Explore
+                              our content to find information and tools relevant to your needs.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button
+                            class="accordion-button collapsed text-light"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive"
+                            aria-expanded="true"
+                            aria-controls="collapseFive"
+                          >
+                            What sets Zenify apart from traditional journaling methods?
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseFive"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingFive"
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div class="accordion-body">
+                            <p style="color: #685151">
+                              Zenify enhances your journaling experience with features like mood
+                              tracking, goal setting, and insightful prompts. Additionally, it
+                              fosters a supportive community for sharing and personal growth.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Thumbnail -->
+          <div class="col-md-6">
+              <div class="story-container">
+                <!-- Thumbnail items go here -->
+                <div class="container">
+                  <div class="story-container">
+                    <!-- Story 2 -->
+                    <div class="story-box-container shadow">
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <a
+                            href="https://www.helpguide.org/articles/ptsd-trauma/traumatic-stress.htm"
+                            target="_blank"
+                            class="text-decoration-none"
+                          >
+                            <div class="story-box">
+                              <div class="thumbnail">
+                                <div class="story-text">
+                                  <h3>Coping with tragedy and tragic events</h3>
+                                  <p>
+                                    Read More
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke="currentColor"
+                                      width="16"
+                                      height="16"
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                      />
+                                    </svg>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-6 story-image">
+                          <a
+                            href="https://www.helpguide.org/articles/ptsd-trauma/traumatic-stress.htm"
+                            target="_blank"
+                            class="text-decoration-none"
+                          >
+                            <div class="story-box">
+                              <img
+                                src="https://www.onlinerevenuesystem.com/hosted/images/b3/82e6a3fb734a588ec8b096628e8eec/tired.png"
+                                alt="Image 1"
+                                class="img-fluid"
+                              />
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Story 4 -->
+                    <div class="story-box-container shadow">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <a
+                            href="https://www.verywellmind.com/how-to-reduce-stress-with-breathing-exercises-3144508"
+                            target="_blank"
+                            class="text-decoration-none"
+                          >
+                            <div class="story-box">
+                              <div class="thumbnail">
+                                <div class="story-text">
+                                  <h3>Breathing exercises to reduce stress</h3>
+                                  <p >
+                                    Read More
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke="currentColor"
+                                      width="16"
+                                      height="16"
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                      />
+                                    </svg>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-md-6  story-image">
+                          <a
+                            href="https://www.verywellmind.com/how-to-reduce-stress-with-breathing-exercises-3144508"
+                            target="_blank"
+                            class="text-decoration-none"
+                          >
+                            <div class="story-box">
+                              <img
+                                src="https://www.louisaearthangel.com/wp-content/uploads/2021/03/meditation-courses-1024x1024.png"
+                                alt="Image 1"
+                                class="img-fluid"
+                              />
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>             
+      </div>
+    </div>
+  <!---------------------------------------Landing page : Accordian Ends Here ---------------------------------->
+  <!----------------------thumbnail------------------------------------>
+  
+    <!-------------------------------------------Footer starts ------------------------------------------>
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-md-3 mb-2">
+            <h5 class="text-uppercase">Company</h5>
+            <ul class="list-unstyled">
+            
+              <li><a href="#team" style="text-decoration: none">Our Team</a></li>
+              <li><a href="#" style="text-decoration: none">Jobs</a></li>
+              <li>
+                <a href="resource.html" style="text-decoration: none"
+                  >Mental Health Resources</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" style="text-decoration: none">Home</a></li>
+              <li><a href="#scrollspyaboutus" style="text-decoration: none">About Us</a></li>
+              <li><a href="#" style="text-decoration: none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4" id="contact">
+            <h5 class="text-uppercase">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                Email:
+                <a href="mailto:info@zenify.com" style="text-decoration: none"
+                  >info@zenify.com</a
+                >
+              </li>
+              <li>
+                Phone:
+                <a href="+1 (555) 123-4567" style="text-decoration: none"
+                  >+1 (555) 123-4567</a
+                >
+              </li>
+              <li>
+                Location:
+                <a href="123 Zen Street, Zen City" style="text-decoration: none"
+                  >123 Zen Street, Zen City</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase">Follow Us</h5>
+            <ul class="list-unstyled list-inline social-icons">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot ">
+        <div class="text">
+          <img src="./Zenify/zenify.png" alt="Your Logo" class="footer-logo" />
+        </div>
+        <div class="bg">
+          <div class="text">
+            <p class="rights">© 2023 Zenify. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript and custom script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  </body>
+</html>

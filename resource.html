@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogue Page</title>
+    <style>
+      body{
+        overflow-x: hidden;
+      }
+      .container {
+        background-color: #fbf3f3;
+      }
+      .card {
+        height: 400px;
+        width: 300px;
+      }
+      .spotify-player {
+        width: 300px;
+        background-color: #000;
+        color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      .audio {
+        background-color: #000;
+      }
+      .album-cover {
+        width: 100%;
+      }
+      .song-info {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      .icons {
+        display: inline-flex;
+        gap: 230px;
+      }
+      .album-cover {
+        min-height: 250px;
+        max-height: 250px;
+      }
+      .hero {
+        font-family: "Dancing Script", cursive;
+        font-size: 3rem;
+        color: #392d2d;
+      }
+      /* Add space between the links */
+
+      .navbar-nav .nav-item {
+        margin-right: 50px; /* Adjust the margin as needed */
+      }
+
+      /* Add a hover effect on the links */
+      .navbar-nav .nav-item .nav-link:hover {
+        background-color: #fbf3f3;
+        color: #d28383; /* Specify your desired hover color */
+        transition: color 0.3s; /* Smooth transition effect */
+        border-radius: 4px;
+      }
+
+      .nav-item .btn {
+        background-color: #fbf3f3;
+        color: #392d2d;
+        border: 1px solid #392d2d;
+      }
+      .nav-item .btn:hover {
+        background-color: #392d2d;
+        color: #fbf3f3; /* Specify your desired hover color */
+        border: 1px solid #392d2d;
+        transition: color 0.3s; /* Smooth transition effect */
+      }
+      .custom-bg {
+        background-color: #f4e1e1;
+      }
+
+      .brandlogo {
+        height: 90px;
+        width: 150px;
+      }
+    </style>
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Mooli&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-bg shadow mb-0">
+      <div class="container-fluid">
+        <a class="navbar-brand p-0 m-0 col-2" href="index.html">
+          <img
+            src="./Zenify/Zenify-logo.gif"
+            class="rounded-circle m-0 brandlogo"
+            alt="brandlogo"
+          />
+        </a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end me-2"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item text-end">
+              <a class="custom-font1 nav-link" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item text-end">
+              <a class="custom-font1 nav-link" href="resource.html"
+                >Serenity Soundscapes</a
+              >
+            </li>
+            <li class="nav-item text-end">
+              <a class="custom-font1 nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item text-end">
+              <a
+                class="btn ml-2 border-2 custom-bg2 custom-font2"
+                href="SignUp.html"
+              >
+                Join Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container me-0 p-0 py-3 text-center mw-100">
+      <!-- Category 1 -->
+      <div class="row my-4 justify-content-center">
+        <div class="col-md-12">
+          <h1 class="mb-3 hero">Zenify Experts</h1>
+        </div>
+        <!-- Use responsive classes to control layout -->
+        <div class="col-md-3 me-4">
+          <div
+            class="card mb-3"
+            style="background-image: url('Zenify/stepping.jpg')"
+          >
+            <div class="card-body text-light fw-bold">
+              <h5 class="card-title">The Power of Calm</h5>
+              <p class="card-text">
+                Manage your mental health by staying calm and centered.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-4">
+          <div
+            class="card mb-2"
+            style="background-image: url('Zenify/sunset.jpg')"
+          >
+            <div class="card-body text-light fw-bold">
+              <h5 class="card-title">Personal Growth</h5>
+              <p class="card-text">
+                Learn how you can improve your life with the right mindset.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-4">
+          <div
+            class="card mb-2"
+            style="background-image: url('Zenify/water.jpg')"
+          >
+            <div class="card-body text-light fw-bold">
+              <h5 class="card-title">Stress and Anxiety</h5>
+              <p class="card-text">
+                Ease stress and anxiety with best practices from and expert
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cards for Category 1 here -->
+      </div>
+
+      <!-- Category 2 -->
+      <div class="row my-4 justify-content-center">
+        <div class="col-md-12">
+          <h2 class="mb-3">Soundscapes</h2>
+        </div>
+        <div class="col-md-3 me-4">
+          <div class="card">
+            <div class="card-body p-0 m-0">
+              <div class="container">
+                <div class="row">
+                  <div class="p-0">
+                    <div class="spotify-player">
+                      <img
+                        src="./Zenify/sky.jpg"
+                        class="album-cover"
+                        alt="Album Cover"
+                      />
+                      <div class="song-info">
+                        <p>Sleep mode</p>
+                        <div class="icons">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi-bi-music-player-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            <path
+                              d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-4">
+          <div class="card">
+            <div class="card-body p-0 m-0">
+              <div class="container">
+                <div class="row">
+                  <div class="p-0">
+                    <div class="spotify-player">
+                      <img
+                        src="./Zenify/woods.jpg"
+                        class="album-cover"
+                        alt="Album Cover"
+                      />
+                      <div class="song-info">
+                        <p>Summer Walk</p>
+                        <div class="icons">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi-bi-music-player-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            <path
+                              d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-4">
+          <div class="card">
+            <div class="card-body p-0 m-0">
+              <div class="container">
+                <div class="row">
+                  <div class="p-0">
+                    <div class="spotify-player">
+                      <img
+                        src="./Zenify/purple.jpg"
+                        class="album-cover"
+                        alt="Album Cover"
+                      />
+                      <div class="song-info">
+                        <p>Journey</p>
+                        <div class="icons">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi-bi-music-player-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            <path
+                              d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Category-3 -->
+      <div class="row my-4 justify-content-center">
+        <div class="col-md-12">
+          <h2 class="mb-3">Personal Growths</h2>
+        </div>
+        <div class="col-md-3 me-4">
+          <div class="card">
+            <div class="card-body p-0 m-0">
+              <div class="container">
+                <div class="row">
+                  <div class="p-0">
+                    <div class="spotify-player">
+                      <img
+                        src="./Zenify/sun.jpg"
+                        class="album-cover"
+                        alt="Album Cover"
+                      />
+                      <div class="song-info">
+                        <p>Music is Therapy</p>
+                        <div class="icons">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi-bi-music-player-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            <path
+                              d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-4">
+          <div class="card">
+            <div class="card-body p-0 m-0">
+              <div class="container">
+                <div class="row">
+                  <div class="p-0">
+                    <div class="spotify-player">
+                      <img
+                        src="./Zenify/plant.jpg"
+                        class="album-cover"
+                        alt="Album Cover"
+                      />
+                      <div class="song-info">
+                        <p>It's only up from here</p>
+                        <div class="icons">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi-bi-music-player-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            <path
+                              d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mx-4">
+          <div class="card">
+            <div class="card-body p-0 m-0">
+              <div class="container">
+                <div class="row">
+                  <div class="p-0">
+                    <div class="spotify-player">
+                      <img
+                        src="./Zenify/hello.jpg"
+                        class="album-cover"
+                        alt="Album Cover"
+                      />
+                      <div class="song-info">
+                        <p>Don't Give up</p>
+                        <div class="icons">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-play-circle-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                            />
+                          </svg>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi-bi-music-player-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            <path
+                              d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm1 2h6a1 1 0 0 1 1 1v2.5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm3 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

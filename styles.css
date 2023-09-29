@@ -1,0 +1,275 @@
+body {
+  background-color: #fffaf4;
+  font-family: "Lato", sans-serif;
+}
+.nav-link {
+  color: #fff;
+}
+.carousel-inner {
+  background-color: #fffaf4;
+}
+.custom-bg {
+  background-color: #f4e1e1;
+}
+.brandlogo {
+  height: 90px;
+  width: 150px;
+}
+.custom-font1 {
+  color: #f4e4e4;
+}
+.custom-font1:hover {
+  color: #f4e4e4;
+}
+.custom-bg2 {
+  background-color: #f4e4e4;
+}
+.custom-bg3 {
+  background-color: var(--rose-fog);
+}
+.custom-font2 {
+  color: #d28383;
+}
+.custom-font2:hover {
+  color: #d28383;
+}
+.custom-font3 {
+  color: #9f1849;
+}
+.custom-font4 {
+  color: #d28383;
+  text-decoration: none;
+}
+.custom-font4:hover {
+  color: #9f1849;
+}
+/* ---------------------------------Get Started Button css-------------------------------------------------- */
+.get-started-btn {
+  background-color: #d28383cc !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.existing-account-btn {
+  background-color: transparent !important;
+  color: #d28383 !important;
+  border: 2px solid #d28383 !important;
+  box-shadow: none !important;
+}
+.existing-account-btn:hover {
+  background-color: #d28383 !important;
+  color: #ffffff !important;
+}
+.get-started-btn:hover {
+  transform: scale(1.1);
+}
+/* ---------------------------------Emoji CSS-------------------------------------------------- */
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #e1acac;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  text-shadow: 1px 1px 1px #e4cfcf;
+}
+.emoji {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+/* Center the emoji vertically and horizontally inside the button */
+.emoji-button .emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+/* Custom CSS to make the buttons smaller */
+.emoji-button {
+  font-size: 1rem;
+  margin: 0 auto;
+  border: 2px solid transparent; /* Add transparent border */
+  transition: transform 0.6s, background-color 0.6s; /* Add border-color transition */
+}
+/* Custom CSS for the card */
+.emoji-card {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+/* Set the button border color on hover */
+.emoji-card .btn:hover {
+  transform: scale(1.1);
+}
+/* Remove the default focus outline */
+.emoji-button:focus {
+  box-shadow: none !important; /* Remove the default box shadow */
+}
+#excited :hover {
+  background-color: rgb(148, 148, 209);
+}
+#happy :hover {
+  background-color: rgb(111, 185, 111);
+}
+#neutral :hover {
+  background-color: rgb(226, 226, 112);
+}
+#angry :hover {
+  background-color: rgb(225, 14, 14);
+}
+#sad :hover {
+  background-color: rgb(144, 124, 124);
+}
+#depressed :hover {
+  background-color: black;
+}
+/* -------------------------------------Emoji CSS Ends -----------------------------------------*/
+.cardimg {
+  max-height: 250px;
+  min-height: 250px;
+}
+/* Accordian CSS */
+.accordion-button {
+  background-color: var(--rose-fog) !important;
+  color: #fff !important;
+  position: relative;
+  box-shadow: none !important;
+  font-size: 5rem;
+}
+.accordion-button:active,
+.accordion-button:focus {
+  border: none !important;
+  background-color: var(--my-pink);
+}
+.accordion-button:hover {
+  background: var(--my-pink) !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none !important; /* This removes the default arrow */
+  content: "-"; /* This is the down arrow character */
+  color: #fbf3f3; /* This sets its color */
+}
+.accordion-button.collapsed::after {
+  background-image: none !important; /* This removes the default right-facing arrow */
+  content: "+"; /* This is the right arrow character */
+  color: #fbf3f3; /* This sets its color */
+}
+.accordion-button::after {
+  width: 1rem; /* Add width to limit the size of the clickable area */
+  text-align: right; /* Align the symbol to the right */
+  /*display: block;  Make it a block-level element */
+  position: absolute; /* Absolute positioning */
+  right: 1rem; /* Push it to the right edge of the parent button */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Centering adjustment */
+}
+:root {
+  --my-pink: #d28383;
+  --fantasy: #fbf3f3;
+  --rose-fog: #e7bcbc;
+  --rose-fog: #e1acac;
+  --oyster-pink: #eccccc;
+  --oyster-pink: #ecd4d4;
+  --vanilla-ice: #f4dcdc;
+  --dawn-pink: #f4e4e4;
+  --vanilla-ice: #f4d4d4;
+}
+/* thumbnail */
+.story-box {
+  cursor: pointer;
+}
+.story-box-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #fbf3f3;
+}
+.story-image img {
+  max-height: 150px;
+  min-height: 150px;
+  float: right;
+}
+.story-text {
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.story-text h3 {
+  font-size: 1.2rem;
+  color: rgb(55, 42, 120);
+}
+.story-text p {
+  color: #444;
+  font-weight: bold;
+}
+/* footer*/
+.footer {
+  background-color: #f4dcdc;
+  color: #9f1849;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.footer-logo {
+  max-width: 100px;
+  border-radius: 50%;
+}
+.row .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.footer-content h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-content ul li {
+  margin-bottom: 10px;
+}
+.footer-content a {
+  text-decoration: none;
+  color: #d28383;
+  transition: color 0.3s ease;
+}
+.footer-content a:hover {
+  color: #9f1849;
+}
+.social-icons i .list {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.bg {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  color: #9f1849;
+}
+.container {
+  color: #9f1849;
+  margin: 0 auto;
+  margin-top: 0;
+  max-width: 1200px;
+  display: grid;
+  flex-direction: column;
+}
+.foot {
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  text-align: center;
+  gap: 350px;
+}
+.container .label-headin {
+  margin-bottom: 5rem;
+}
